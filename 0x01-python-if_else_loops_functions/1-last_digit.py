@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-last_dig = int(str(number)[-1])
+if number >= 0:
+    last_dig = int(str(number)[-1])
+else:
+    last_dig = int(str(number)[-1]) * -1
 
 if last_dig > 5:
     end_str = 'and is greater than 5'
