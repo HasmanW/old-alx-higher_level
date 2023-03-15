@@ -2,7 +2,7 @@
 def no_c(my_string):
     new_string = ""
     for i in my_string:
-        if i == ord('C') or i == ord('c'):
+        if ord(i) == ord('C') or i == ord('c'):
             pass
         else:
             new_string += i
