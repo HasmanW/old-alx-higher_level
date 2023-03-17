@@ -3,7 +3,7 @@
 def remove_char_at(str, n):
     new_str = ""
     for val in str:
-        if n > len(str) - 1:
+        if n > len(str) - 1 or n < 0:
             return str
         elif val != str[n]:
             new_str += val
