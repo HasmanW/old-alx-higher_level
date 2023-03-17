@@ -6,4 +6,6 @@ def simple_delete(a_dictionary, key=""):
         keys.append(val)
     if key in keys:
         del a_dictionary[key]
-    return a_dictionary
+        return a_dictionary
+    else:
+        return a_dictionary
