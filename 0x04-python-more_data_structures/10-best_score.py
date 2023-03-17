@@ -8,3 +8,5 @@ def best_score(a_dictionary):
             keys.append(key)
             values.append(value)
         return keys[values.index(max(values))]
+    else:
+        return
