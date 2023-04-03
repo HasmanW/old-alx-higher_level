@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-ractangle class module
+rectangle class module
 """
 
 
