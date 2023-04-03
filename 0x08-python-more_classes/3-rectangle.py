@@ -48,3 +48,14 @@ class Rectangle:
         else:
             perimeter = 2 * (self.__height + self.__width)
         return perimeter
+
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            new_str = []
+            for height in range(self.__height):
+                for width in range(self.__width):
+                    new_str.append('#')
+                new_str.append("\n")
+        return "".join(new_str)
