@@ -56,21 +56,18 @@ class Rectangle:
         """ returns perimeter of the rectangle """
         if self.__width == 0 or self.__height == 0:
             return 0
-        else:
-            perimeter = 2 * (self.__height + self.__width)
-        return perimeter
+        return 2 * (self.__height + self.__width)
 
     def __str__(self):
         """ prints rectangle with character # """
         if self.__width == 0 or self.__height == 0:
             return ""
-        else:
-            new_str = []
-            for height in range(self.__height):
-                for width in range(self.__width):
-                    new_str.append('#')
-                new_str.append("\n")
-        return "".join(new_str)
+        new_str = ""
+        for height in range(self.__height):
+            for width in range(self.__width):
+                new_str += str('#')
+            new_str += "\n"
+        return new_str
 
     def __repr__(self):
         """ repr representation of rectangle"""
