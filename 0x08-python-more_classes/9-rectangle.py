@@ -84,11 +84,6 @@ class Rectangle:
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
-    @classmethod
-    def square(cls, size=0):
-        """ returns a rectangle """
-        return Rectangle(size, size)
-
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """ returns the bigger rectangle """
@@ -101,3 +96,8 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        """ returns a rectangle """
+        return Rectangle(size, size)
