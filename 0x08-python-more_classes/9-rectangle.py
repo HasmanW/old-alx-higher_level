@@ -71,7 +71,10 @@ class Rectangle:
         new_str = ""
         for height in range(self.__height):
             for width in range(self.__width):
-                new_str += str(self.print_symbol)
+                try:
+                    new_str += str(self.print_symbol)
+                except Exception:
+                    new_str += type(self).print_symbol
             new_str += "\n"
         return new_str
 
