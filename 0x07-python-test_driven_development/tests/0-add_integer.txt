@@ -17,13 +17,10 @@
 102
 >>> add_integer(a)
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
 NameError: name 'a' is not defined
 >>> add_integer('a')
 Traceback (most recent call last):
-    raise TypeError("a must be an integer")
 TypeError: a must be an integer
 >>> add_integer(4, 'a')
 Traceback (most recent call last):
-    raise TypeError("b mst be an integer")
 TypeError: b mst be an integer
