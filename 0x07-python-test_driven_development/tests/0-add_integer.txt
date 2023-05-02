@@ -3,8 +3,18 @@
 10
 >>> add_integer(-5, 9)
 4
+>>> add_integer(2)
+100
 >>> add_integer(9)
 107
+>>> add_integer(4, 20.56)
+24
+>>> add_integer(4.67, 6.45)
+10
+>>> add_integer(4.67, 10)
+14
+>>> add_integer(4.67)
+102
 >>> add_integer(a)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -17,11 +27,3 @@ TypeError: a must be an integer
 Traceback (most recent call last):
     raise TypeError("b mst be an integer")
 TypeError: b mst be an integer
->>> add_integer(4, 20.56)
-24
->>> add_integer(4.67, 6.45)
-10
->>> add_integer(4.67, 10)
-14
->>> add_integer(4.67)
-102
