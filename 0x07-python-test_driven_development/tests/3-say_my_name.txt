@@ -7,3 +7,5 @@ TypeError: last_name must be a string
 >>> say_my_name(24, "Kagame")
 Traceback (most recent call last):
 TypeError: first_name must be a string
+>>> say_my_name("Kagame")
+My name is Kagame
