@@ -1,21 +1,29 @@
-
- 
-
-``add integer()``
-
-::
-    >>> add_integer = __import__("0-add_integer").add_integer
-    >>> add_integer(3, 5)
-    8
-    >>> add_integer(2)
-    100
-    >>> add_integer('a')
-    Traceback (most recent call last):
-    TypeError: a must be an integer
-    >>> add_integer(5, 'n')
-    Traceback (most recent call last):
-    TypeError: b must be an integer
-    >>> add_integer(9.56, 10)
-    19
-    >>> add_integer(10, 23.874)
-    33
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(2, 8)
+10
+>>> add_integer(-5, 9)
+4
+>>> add_integer(2)
+100
+>>> add_integer(9)
+107
+>>> add_integer(4, 20.56)
+24
+>>> add_integer(4.67, 6.45)
+10
+>>> add_integer(4.67, 10)
+14
+>>> add_integer(4.67)
+102
+>>> add_integer(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> add_integer('a')
+Traceback (most recent call last):
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer(4, 'a')
+Traceback (most recent call last):
+    raise TypeError("b mst be an integer")
+TypeError: b mst be an integer
